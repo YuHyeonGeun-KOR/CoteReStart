@@ -1,0 +1,5 @@
+-- 코드를 입력하세요
+SELECT (PRICE - PRICE % 10000 ) as PRICE_GROUP , count(*) as PRODUCT_CODE
+from PRODUCT 
+group by PRICE_GROUP
+ORDER BY PRICE_GROUP
